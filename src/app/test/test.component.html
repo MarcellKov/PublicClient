@@ -1,0 +1,21 @@
+<div style="display: grid; grid-template-columns: auto auto ; margin:4%;">
+<div style="width: fit-content;">
+    <div style="background-color: wheat;border: 1px solid black; display:grid; grid-row: auto auto; padding: 8px; width: fit-content;">
+        
+        <input type="text" placeholder="Munka neve" style="margin-bottom: 5%;" class="QueryField">
+        <select>
+            <option value="Csongrád-Csanád megye">Csongrád-Csanád megye</option>
+        </select>
+        
+    </div>
+
+</div>
+
+<div>
+<h1 >Jó munka keresést</h1>
+</div>
+</div>
+
+<div style="display: grid; text-align: center;">
+    <p *ngFor="let x of jobs">{{x.poster}}</p>
+</div>
